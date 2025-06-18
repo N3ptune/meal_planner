@@ -13,7 +13,7 @@ export function meal_plan(){
     return(
         <>
             <header>
-                <h1>Meal Plan</h1>
+                <h1>Your Week</h1>
             </header>
 
             <main>

@@ -1,4 +1,5 @@
-import React from "react";
+import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import 'home_page.css';
 
 // This will be the home page, with meals from individuals that the user has followed, or similar content. One item at a time.
@@ -6,6 +7,7 @@ import 'home_page.css';
 
 export function home_page() {
     const something = [];
+    const navigate = useNavigate();
     
     return (
         <>
@@ -21,6 +23,7 @@ export function home_page() {
 
             <footer>
                 <nav>
+                    <div><button onClick = {async () => {navigate('/home_page')}}/><img src = '../../public/home_button.png' /></div>
                     <li><a href="home_page.html">Home</a></li>
                     <li><a href="../meal_pinterest/meal_pinterest.html">Meals</a></li>
                     <li><a href="../meal_plan/meal_plan.html">Your Plan</a></li>
