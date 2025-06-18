@@ -1,2 +1,6 @@
 import React from "react";
-import 'main.css';
+import ReactDOM from 'react-dom/client';
+import App from "./scr/app";
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
