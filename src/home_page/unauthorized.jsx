@@ -3,6 +3,9 @@ import React, { useState, useEffect } from 'react';
 import 'unauthorized.css';
 
 export function unauthorized() {
+
+    const navigate = useNavigate();
+
     return(
         <>
             <header>
@@ -18,7 +21,7 @@ export function unauthorized() {
                     <div>
                         <input type = "text" name = "password" placeholder = "Password"/>
                     </div>
-                    <button type = "submit">Login</button>
+                    <button type = "submit" onClick = {async () => {navigate('/authorized')}}>Login</button>
                     <button type = "submit">Create</button>
                 </form>
             </main>
