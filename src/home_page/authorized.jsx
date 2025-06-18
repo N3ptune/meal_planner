@@ -1,11 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
-import 'home_page.css';
+import 'authorized.css';
 
 // This will be the home page, with meals from individuals that the user has followed, or similar content. One item at a time.
 // Need some way to distinct this from the explore page. Maybe will merge the two.
 
-export function home_page() {
+export function authorized() {
     const something = [];
     const navigate = useNavigate();
     
