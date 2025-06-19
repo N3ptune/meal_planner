@@ -22,7 +22,7 @@ export function unauthorized() {
                         <input type = "text" name = "password" placeholder = "Password"/>
                     </div>
                     <button type = "submit" onClick = {async () => {navigate('/authorized')}}>Login</button>
-                    <button type = "submit">Create</button>
+                    <button type = "submit" onClick = {async () => {navigate('/authorized')}}>Create</button>
                 </form>
             </main>
 
